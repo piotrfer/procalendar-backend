@@ -28,3 +28,6 @@ class Activity(models.Model):
     
     category = models.CharField(max_length=3, choices=categories)
     day = models.CharField(max_length=3, choices=days)
+
+    def __str__(self):
+        return self.title
