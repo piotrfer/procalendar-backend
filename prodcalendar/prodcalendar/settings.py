@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'djoser',
     'apps.activity',
     'apps.authapp',
-    'apps.week',
+    'apps.event',
+    'apps.task',
 ]
 
 MIDDLEWARE = [

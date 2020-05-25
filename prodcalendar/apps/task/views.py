@@ -3,12 +3,12 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 
-from .serializers import ActivitiesSerializer
+from .serializers import TasksSerializer
 
-class ActivitiesListView(APIView):
+class TasksListView(APIView):
     permissions_classes = [IsAuthenticated]
     
     def get(self, request):
-        activities = request.user.activities.all()
-        seriliazer = ActivitiesSerializer(activities, many=True)
+        tasks = request.user.tasks.all()
+        seriliazer = TasksSerializer(tasks, many=True)
         return Response(seriliazer.data)

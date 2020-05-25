@@ -1,11 +1,14 @@
+from django.contrib.auth import get_user_model
 from django.db import models
+import datetime as dt
 
 class Activity(models.Model):
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='activities')
     title = models.CharField(max_length=100)
     description = models.TextField()
-    duration = models.IntegerField()
     start = models.TimeField()
-    
+    end = models.TimeField(default=dt.time(hour=1,minute=30))
+
     categories = (
         ('WRK', 'work'),
         ('SCH', 'school'),
