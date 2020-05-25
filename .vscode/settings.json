@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "E:\\PLIKI\\PROJEKTY\\env-productivity-calendar\\Scripts\\python.exe"
+    "python.pythonPath": "E:\\PLIKI\\PROJEKTY\\env-productivity-calendar\\Scripts\\python.exe",
+    "python.formatting.provider": "black"
 }

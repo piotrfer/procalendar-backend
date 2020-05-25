@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'djoser',
     'apps.activity',
     'apps.authapp',
+    'apps.week',
 ]
 
 MIDDLEWARE = [
@@ -91,14 +92,14 @@ DATABASES = {
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
+    'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    ),
-    'DEFAULT_PERMISSIONS_CLASSES': (
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ),
+    ]
 }
 
 DJOSER = {
