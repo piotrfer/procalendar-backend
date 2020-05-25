@@ -5,7 +5,7 @@ ready:
 - /activity - list of user activities
 - /activity/<int:pk> - activity details
 
-inm progress:
+in progress:
 - /event - list of user events
 - /event/<int:pk> - event details
 - /task - list of user tasks
