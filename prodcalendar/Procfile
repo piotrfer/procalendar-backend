@@ -1,2 +1,2 @@
 web: gunicorn prodcalendar.wsgi
-release: tasks.sh
+release: bash tasks.sh
