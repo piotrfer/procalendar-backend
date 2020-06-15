@@ -5,4 +5,4 @@ from ..activity.models import Activity
 class Task(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='tasks', null=True)
     title = models.CharField(max_length=100)
-    active = models.BooleanField(default=True)
+    done = models.BooleanField(default=False)
