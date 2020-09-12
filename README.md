@@ -5,5 +5,3 @@ Productivity calendar app that lets you organize your weekly activities and even
 - /activity/<int:pk> - activity details
 - /task - list of user tasks
 - /task/<int:pk> - task details
-
-The API is hosted at https://prod-calendar.herokuapp.com/
